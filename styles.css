@@ -257,12 +257,18 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: all 0.3s;
     border-left: 4px solid var(--primary-color);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
 }
 
 .service-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     border-left-color: var(--secondary-color);
+    text-decoration: none;
+    color: inherit;
 }
 
 .service-card h4 {
