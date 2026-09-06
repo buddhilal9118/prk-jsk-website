@@ -18,6 +18,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#home">होम</a></li>
+                <li><a href="#news">समाचार</a></li>
                 <li><a href="#services">सेवाएं</a></li>
                 <li><a href="#about">हमारे बारे में</a></li>
                 <li><a href="#team">टीम</a></li>
@@ -33,8 +34,26 @@
             <h2>Jan Sewa Kendra</h2>
             <p>आपकी सभी सरकारी सेवाओं के लिए एक विश्वस्त स्थान</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">सेवाएं देखें</button>
-                <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">हमसे संपर्क करें</button>
+                <button class="btn btn-primary" onclick="document.getElementById('news').scrollIntoView({behavior: 'smooth'})">समाचार देखें</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">सेवाएं देखें</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News/Blog Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2>नवीनतम समाचार और अपडेट</h2>
+            <div class="news-filters">
+                <button class="filter-btn active" onclick="filterNews('all')">सभी</button>
+                <button class="filter-btn" onclick="filterNews('vacancy')">नौकरियाँ</button>
+                <button class="filter-btn" onclick="filterNews('result')">परिणाम</button>
+                <button class="filter-btn" onclick="filterNews('admit')">प्रवेश पत्र</button>
+                <button class="filter-btn" onclick="filterNews('key')">उत्तर कुंजी</button>
+                <button class="filter-btn" onclick="filterNews('scheme')">योजनाएं</button>
+            </div>
+            <div class="news-grid" id="newsContainer">
+                <!-- News cards will be loaded here via JavaScript -->
             </div>
         </div>
     </section>
