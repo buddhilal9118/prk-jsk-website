@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PRK Computer Center Jan Sewa Kendra - Sitapur | सरकारी सेवाएं, आध���र, राशन, जन्म प्रमाण पत्र, बैंकिंग और अधिक">
+    <meta name="description" content="PRK Computer Center Jan Sewa Kendra - Sitapur | आधार, पैन, राशन, प्रमाण पत्र, बैंकिंग, आयुष्मान, फसल बीमा और सरकारी सेवाएं">
+    <meta name="theme-color" content="#0a3d8f">
     <title>PRK Computer Center Jan Sewa Kendra | Sitapur</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -30,8 +31,9 @@
                     <li><a href="#home">होम</a></li>
                     <li><a href="#about">हमारे बारे में</a></li>
                     <li><a href="#services">सेवाएं</a></li>
+                    <li><a href="#gallery">गैलरी</a></li>
                     <li><a href="#news">समाचार</a></li>
-                    <li><a href="#team">टीम</a></li>
+                    <li><a href="#testimonials">समीक्षाएँ</a></li>
                     <li><a href="#contact">संपर्क</a></li>
                 </ul>
             </nav>
@@ -49,10 +51,10 @@
                     <p class="eyebrow">विश्वसनीय सरकारी सेवा केंद्र</p>
                     <h1>PRK Computer Center</h1>
                     <h2>Jan Sewa Kendra</h2>
-                    <p class="hero-text">आपकी सभी सरकारी सेवाओं के लिए एक भरोसेमंद स्थान — आधार, पैन, राशन, आय प्रमाण पत्र, बैंकिंग, लोन और डिजिटल सेवाएं एक ही जगह पर।</p>
+                    <p class="hero-text">सभी सरकारी सेवाएं एक ही जगह पर — आधार, पैन, राशन, प्रमाण पत्र, बैंकिंग, पेंशन, आयुष्मान, फसल बीमा और डिजिटल सहायता की सुविधाजनक सेवा।</p>
                     <div class="hero-buttons">
-                        <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">सेवाएं देखें</button>
-                        <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">संपर्क करें</button>
+                        <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">सेवाएं देखें</button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">संपर्क करें</button>
                     </div>
 
                     <div class="hero-meta">
@@ -76,27 +78,48 @@
             </div>
         </section>
 
+        <section class="stats-band">
+            <div class="container stats-grid">
+                <div class="stat-box">
+                    <strong>5000+</strong>
+                    <span>ग्राहक सेवा</span>
+                </div>
+                <div class="stat-box">
+                    <strong>12+</strong>
+                    <span>सरकारी सेवाएं</span>
+                </div>
+                <div class="stat-box">
+                    <strong>100%</strong>
+                    <span>गोपनीयता</span>
+                </div>
+                <div class="stat-box">
+                    <strong>24/7</strong>
+                    <span>WhatsApp सहायता</span>
+                </div>
+            </div>
+        </section>
+
         <section id="about" class="feature-strip">
             <div class="container feature-grid">
                 <div class="feature-box">
                     <i class="fas fa-shield-alt"></i>
                     <h3>विश्वसनीय</h3>
-                    <p>सही guidance और सुरक्षित कार्यप्रणाली</p>
+                    <p>सही दिशा और सुरक्षित प्रक्रिया</p>
                 </div>
                 <div class="feature-box">
                     <i class="fas fa-bolt"></i>
                     <h3>तेज़ सेवा</h3>
-                    <p>त्वरित आवेदन, अपडेट और सहायता</p>
+                    <p>त्वरित आवेदन और अपडेट</p>
                 </div>
                 <div class="feature-box">
                     <i class="fas fa-user-check"></i>
                     <h3>व्यक्तिगत सहयोग</h3>
-                    <p>हर ग्राहक को समझदारी से सहायता</p>
+                    <p>हर ग्राहक को सही सहायता</p>
                 </div>
                 <div class="feature-box">
                     <i class="fas fa-phone-alt"></i>
-                    <h3>आपसे सीधे संपर्क</h3>
-                    <p>फोन या WhatsApp पर तुरंत जवाब</p>
+                    <h3>सीधा संपर्क</h3>
+                    <p>फोन/WhatsApp पर तुरंत जवाब</p>
                 </div>
             </div>
         </section>
@@ -109,7 +132,7 @@
                 </div>
 
                 <div class="service-category">
-                    <h3><i class="fas fa-certificate"></i> प्रमाण पत्र (Certificates)</h3>
+                    <h3><i class="fas fa-certificate"></i> प्रमाण पत्र</h3>
                     <div class="service-grid">
                         <a href="https://incometax.gov.in/" target="_blank" rel="noopener" class="service-card">
                             <h4>आय प्रमाण पत्र</h4>
@@ -234,6 +257,42 @@
             </div>
         </section>
 
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow eyebrow-dark">गैलरी</p>
+                    <h2>प्रति कार्यशाला का विज़ुअल</h2>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-card large">
+                        <div class="gallery-overlay">
+                            <span>सरकारी सेवा</span>
+                            <h3>प्रमाण पत्र सहायता</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-card second">
+                        <div class="gallery-overlay">
+                            <span>Digital Support</span>
+                            <h3>आधार & पैन</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-card third">
+                        <div class="gallery-overlay">
+                            <span>Banking</span>
+                            <h3>AePS & मनी ट्रांसफर</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-card fourth">
+                        <div class="gallery-overlay">
+                            <span>Customer Care</span>
+                            <h3>सही मार्गदर्शन</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="news" class="news-section">
             <div class="container">
                 <div class="section-heading">
@@ -264,7 +323,7 @@
                 <div class="why-grid">
                     <div class="why-card">
                         <i class="fas fa-award"></i>
-                        <h3>कर्मचार्य और सही दिशा</h3>
+                        <h3>सही और विश्वसनीय सहयोग</h3>
                         <p>हर आवेदन के लिए सही प्रक्रिया और स्पष्ट जानकारी दी जाती है।</p>
                     </div>
                     <div class="why-card">
@@ -280,7 +339,70 @@
                     <div class="why-card">
                         <i class="fas fa-language"></i>
                         <h3>हिंदी में आसान समझ</h3>
-                        <p>हिंदी भाषा में आसान समझ और सरल प्रक्रिया के साथ सेवाएं उपलब्ध हैं।</p>
+                        <p>हिंदी तथा सरल भाषाओं में उपयोगी मार्गदर्शन।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonial-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow eyebrow-dark">ग्राहक प्रतिक्रिया</p>
+                    <h2>जो लोग हमारे साथ रहे हैं</h2>
+                </div>
+
+                <div class="testimonial-grid">
+                    <article class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“आधार अपडेट और पैन कार्ड के लिए बहुत अच्छे से मदद मिली। टीम बहुत सहयोगी है।”</p>
+                        <h4>– राजेश कुमार</h4>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“प्रमाण पत्र और राशन कार्ड की प्रक्रिया समझने में काफी मदद हुई। समय पर सेवा मिली।”</p>
+                        <h4>– सुमित शर्मा</h4>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“बैंकिंग सेवाएं और AePS बहुत सही तरीके से दिए गए। बहुत ही संतुष्ट।”</p>
+                        <h4>– अंजली यादव</h4>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container faq-wrap">
+                <div class="section-heading left-align">
+                    <p class="eyebrow eyebrow-dark">सामान्य प्रश्न</p>
+                    <h2>अक्सर पूछे जाने वाले सवाल</h2>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item active">
+                        <button class="faq-question" type="button">क्या यहाँ सभी सरकारी सेवाएं मिलती हैं?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>हाँ, यहाँ आधार, पैन, राशन, प्रमाण पत्र, बैंकिंग, पेंशन, आयुष्मान, लोन और अन्य सरकारी सेवाओं की मदद मिलती है।</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">क्या appointment लेना पड़ता है?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>जरूरत के अनुसार आप फोन या WhatsApp पर पहले संपर्क करके समय ले सकते हैं।</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">क्या मैं ऑनलाइन सहायता ले सकता हूँ?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>हाँ, आप WhatsApp या फोन के माध्यम से जानकारी, अपडेट और मार्गदर्शन प्राप्त कर सकते हैं।</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">क्या दस्तावेज़ की जानकारी सही दी जाती है?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>हाँ, सभी दस्तावेज़ और आवेदन संबंधी जानकारी सरल और सही भाषा में दी जाती है।</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -350,7 +472,18 @@
                         </div>
                     </div>
 
-                    <form class="contact-form" id="contactForm">
+                    <div class="contact-map-box">
+                        <iframe
+                            title="PRK Jan Sewa Kendra Location"
+                            src="https://www.google.com/maps?q=Sitapur%20Uttar%20Pradesh&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-grid">
                         <div class="form-group">
                             <label for="name">नाम</label>
                             <input type="text" id="name" name="name" required>
@@ -359,6 +492,8 @@
                             <label for="phone">फोन</label>
                             <input type="tel" id="phone" name="phone" required>
                         </div>
+                    </div>
+                    <div class="form-grid">
                         <div class="form-group">
                             <label for="email">ईमेल</label>
                             <input type="email" id="email" name="email" required>
@@ -373,14 +508,14 @@
                                 <option value="other">अन्य</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label for="message">संदेश</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">भेजें</button>
-                        <p id="formStatus" class="form-status" aria-live="polite"></p>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">संदेश</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">भेजें</button>
+                    <p id="formStatus" class="form-status" aria-live="polite"></p>
+                </form>
             </div>
         </section>
     </main>
@@ -399,114 +534,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

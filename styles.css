@@ -79,6 +79,10 @@ textarea {
     margin-bottom: 36px;
 }
 
+.left-align {
+    text-align: left;
+}
+
 .section-heading h2 {
     font-size: clamp(2rem, 4vw, 3rem);
     color: var(--primary-dark);
@@ -350,6 +354,37 @@ textarea {
     color: #d6f7d8;
 }
 
+.stats-band {
+    background: linear-gradient(180deg, #edf4ff 0%, #f7f8fb 100%);
+    padding: 20px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+.stat-box {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    text-align: center;
+    padding: 22px 18px;
+    box-shadow: 0 10px 22px rgba(8, 31, 77, 0.05);
+}
+
+.stat-box strong {
+    display: block;
+    color: var(--primary-dark);
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+}
+
+.stat-box span {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
 .feature-strip {
     padding: 26px 0 14px;
     background: linear-gradient(180deg, #eef4ff 0%, #f7f8fb 100%);
@@ -396,7 +431,10 @@ textarea {
 .news-section,
 .why-us,
 .team-section,
-.contact {
+.contact,
+.gallery-section,
+.testimonial-section,
+.faq-section {
     padding: 90px 0;
 }
 
@@ -460,6 +498,65 @@ textarea {
     padding: 7px 12px;
     border-radius: 999px;
     font-size: 0.76rem;
+}
+
+.gallery-section {
+    background: linear-gradient(180deg, #ffffff 0%, #f3f7ff 100%);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-card {
+    position: relative;
+    min-height: 260px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
+}
+
+.gallery-card.large {
+    grid-column: span 2;
+    min-height: 420px;
+    background-image: linear-gradient(rgba(10, 61, 143, 0.2), rgba(8, 31, 77, 0.5)), url('https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=80');
+}
+
+.gallery-card.second {
+    background-image: linear-gradient(rgba(10, 61, 143, 0.2), rgba(8, 31, 77, 0.5)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80');
+}
+
+.gallery-card.third {
+    background-image: linear-gradient(rgba(10, 61, 143, 0.2), rgba(8, 31, 77, 0.5)), url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=80');
+}
+
+.gallery-card.fourth {
+    background-image: linear-gradient(rgba(10, 61, 143, 0.2), rgba(8, 31, 77, 0.5)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80');
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: auto 0 0;
+    background: linear-gradient(180deg, transparent, rgba(7, 20, 51, 0.8));
+    color: var(--white);
+    padding: 22px;
+}
+
+.gallery-overlay span {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.gallery-overlay h3 {
+    font-size: 1.3rem;
 }
 
 .news-section {
@@ -608,6 +705,97 @@ textarea {
     font-size: 0.95rem;
 }
 
+.testimonial-section {
+    background: #f4f7fd;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.testimonial-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 26px 20px;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.04);
+}
+
+.stars {
+    color: #ffb800;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.testimonial-card p {
+    color: var(--text);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.testimonial-card h4 {
+    color: var(--primary-dark);
+}
+
+.faq-wrap {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.faq-list {
+    display: grid;
+    gap: 16px;
+}
+
+.faq-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: none;
+    color: var(--primary-dark);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-question span {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+}
+
+.faq-answer p {
+    padding: 0 22px 20px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 220px;
+}
+
 .team-section {
     background: #f4f7fd;
 }
@@ -684,6 +872,7 @@ textarea {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     align-items: start;
+    margin-bottom: 28px;
 }
 
 .contact-info {
@@ -727,11 +916,32 @@ textarea {
     color: var(--muted);
 }
 
+.contact-map-box {
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    min-height: 100%;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.04);
+}
+
+.contact-map-box iframe {
+    display: block;
+    width: 100%;
+    min-height: 420px;
+    border: 0;
+}
+
 .contact-form {
     background: #f9fbff;
     padding: 28px;
     border-radius: 24px;
     border: 1px solid var(--border);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
 }
 
 .form-group {
@@ -882,13 +1092,14 @@ textarea {
 
 @media (max-width: 960px) {
     .hero-grid,
-    .contact-grid,
     .feature-grid,
-    .why-grid {
+    .why-grid,
+    .faq-wrap {
         grid-template-columns: 1fr 1fr;
     }
 
-    .hero-grid {
+    .hero-grid,
+    .faq-wrap {
         grid-template-columns: 1fr;
     }
 
@@ -929,23 +1140,35 @@ textarea {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 760px) {
+    .stats-grid,
+    .feature-grid,
+    .why-grid,
+    .testimonial-grid,
+    .gallery-grid,
+    .contact-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-card.large {
+        grid-column: auto;
+        min-height: 260px;
+    }
+
     .services,
     .news-section,
     .why-us,
     .team-section,
-    .contact {
+    .contact,
+    .gallery-section,
+    .testimonial-section,
+    .faq-section {
         padding: 72px 0;
     }
 
     .hero {
         padding-top: 72px;
-    }
-
-    .feature-grid,
-    .why-grid,
-    .contact-grid {
-        grid-template-columns: 1fr;
     }
 
     .hero-buttons {
@@ -972,117 +1195,3 @@ textarea {
         bottom: 18px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -171,6 +171,32 @@ function setupMobileNav() {
     });
 }
 
+function setupFaqAccordion() {
+    const items = document.querySelectorAll('.faq-item');
+
+    items.forEach(item => {
+        const button = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        if (!button || !answer) return;
+
+        button.addEventListener('click', () => {
+            const isOpen = item.classList.contains('active');
+
+            items.forEach(entry => {
+                entry.classList.remove('active');
+                const btn = entry.querySelector('.faq-question');
+                if (btn) btn.lastChild.textContent = '+';
+            });
+
+            if (!isOpen) {
+                item.classList.add('active');
+                button.lastChild.textContent = '−';
+            }
+        });
+    });
+}
+
 function setupForm() {
     const form = document.getElementById('contactForm');
     const status = document.getElementById('formStatus');
@@ -200,92 +226,9 @@ document.addEventListener('DOMContentLoaded', () => {
     displayNews('all');
     setupNewsFilters();
     setupMobileNav();
+    setupFaqAccordion();
     setupForm();
 
     const year = document.getElementById('year');
     if (year) year.textContent = new Date().getFullYear();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
