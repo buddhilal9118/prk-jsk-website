@@ -176,22 +176,22 @@ function setupFaqAccordion() {
 
     items.forEach(item => {
         const button = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
+        const sign = item.querySelector('.faq-sign');
 
-        if (!button || !answer) return;
+        if (!button || !sign) return;
 
         button.addEventListener('click', () => {
             const isOpen = item.classList.contains('active');
 
             items.forEach(entry => {
                 entry.classList.remove('active');
-                const btn = entry.querySelector('.faq-question');
-                if (btn) btn.lastChild.textContent = '+';
+                const entrySign = entry.querySelector('.faq-sign');
+                if (entrySign) entrySign.textContent = '+';
             });
 
             if (!isOpen) {
                 item.classList.add('active');
-                button.lastChild.textContent = '−';
+                sign.textContent = '−';
             }
         });
     });

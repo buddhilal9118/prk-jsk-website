@@ -427,6 +427,27 @@ textarea {
     font-size: 0.95rem;
 }
 
+.cta-band {
+    background: #edf4ff;
+    padding: 18px 0 0;
+}
+
+.cta-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, rgba(10, 61, 143, 0.08), rgba(255, 153, 0, 0.08));
+    border: 1px solid rgba(10, 61, 143, 0.06);
+    border-radius: 22px;
+    padding: 22px 24px;
+}
+
+.cta-inner h3 {
+    color: var(--primary-dark);
+    font-size: clamp(1.2rem, 2vw, 1.7rem);
+}
+
 .services,
 .news-section,
 .why-us,
@@ -772,18 +793,24 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
     cursor: pointer;
 }
 
-.faq-question span {
+.faq-question span:first-child {
+    flex: 1;
+}
+
+.faq-sign {
     font-size: 1.5rem;
     color: var(--primary);
+    line-height: 1;
 }
 
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease;
+    transition: max-height 0.22s ease;
 }
 
 .faq-answer p {
@@ -1174,6 +1201,11 @@ textarea {
     .hero-buttons {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .cta-inner {
+        flex-direction: column;
+        text-align: center;
     }
 
     .btn {
