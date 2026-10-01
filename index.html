@@ -3,328 +3,510 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PRK Computer Center Jan Sewa Kendra - सभी सरकारी सेवाएं एक जगह पर">
-    <title>PRK Computer Center Jan Sewa Kendra - Sitapur</title>
+    <meta name="description" content="PRK Computer Center Jan Sewa Kendra - Sitapur | सरकारी सेवाएं, आध���र, राशन, जन्म प्रमाण पत्र, बैंकिंग और अधिक">
+    <title>PRK Computer Center Jan Sewa Kendra | Sitapur</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <i class="fas fa-building"></i>
-                <span>PRK Jan Sewa Kendra</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">होम</a></li>
-                <li><a href="#news">समाचार</a></li>
-                <li><a href="#services">सेवाएं</a></li>
-                <li><a href="#about">हमारे बारे में</a></li>
-                <li><a href="#team">टीम</a></li>
-                <li><a href="#contact">संपर्क करें</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>PRK Computer Center</h1>
-            <h2>Jan Sewa Kendra</h2>
-            <p>आपकी सभी सरकारी सेवाओं के लिए एक विश्वस्त स्थान</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="document.getElementById('news').scrollIntoView({behavior: 'smooth'})">समाचार देखें</button>
-                <button class="btn btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">सेवाएं देखें</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- News/Blog Section -->
-    <section id="news" class="news-section">
-        <div class="container">
-            <h2>नवीनतम समाचार और अपडेट</h2>
-            <div class="news-filters">
-                <button class="filter-btn active" onclick="filterNews('all')">सभी</button>
-                <button class="filter-btn" onclick="filterNews('vacancy')">नौकरियाँ</button>
-                <button class="filter-btn" onclick="filterNews('result')">परिणाम</button>
-                <button class="filter-btn" onclick="filterNews('admit')">प्रवेश पत्र</button>
-                <button class="filter-btn" onclick="filterNews('key')">उत्तर कुंजी</button>
-                <button class="filter-btn" onclick="filterNews('scheme')">योजनाएं</button>
-            </div>
-            <div class="news-grid" id="newsContainer">
-                <!-- News cards will be loaded here via JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Center Info -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>हमारे बारे में</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>पता</h3>
-                    <p>Haji Market, Bank of India के पास<br>Tambaur, Sitapur<br>Uttar Pradesh 261208</p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>फोन</h3>
-                    <p><a href="tel:9118663177">9118663177</a></p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>ईमेल</h3>
-                    <p><a href="mailto:buddhilal9118@gmail.com">buddhilal9118@gmail.com</a></p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-clock"></i>
-                    <h3>समय</h3>
-                    <p>सोम - शनि: 9:00 AM - 6:00 PM<br>रविवार: बंद</p>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <div class="brand" aria-label="PRK Jan Sewa Kendra">
+                <div class="brand-icon"><i class="fas fa-building"></i></div>
+                <div>
+                    <strong>PRK Jan Sewa Kendra</strong>
+                    <span>Sitapur, Uttar Pradesh</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Team Section -->
-    <section id="team" class="team-section">
-        <div class="container">
-            <h2>हमारी टीम</h2>
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-photo">
-                        <img src="https://via.placeholder.com/250x250?text=Buddhilal" alt="Buddhilal">
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">होम</a></li>
+                    <li><a href="#about">हमारे बारे में</a></li>
+                    <li><a href="#services">सेवाएं</a></li>
+                    <li><a href="#news">समाचार</a></li>
+                    <li><a href="#team">टीम</a></li>
+                    <li><a href="#contact">संपर्क</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/919118663177" target="_blank" rel="noopener" class="header-cta">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">विश्वसनीय सरकारी सेवा केंद्र</p>
+                    <h1>PRK Computer Center</h1>
+                    <h2>Jan Sewa Kendra</h2>
+                    <p class="hero-text">आपकी सभी सरकारी सेवाओं के लिए एक भरोसेमंद स्थान — आधार, पैन, राशन, आय प्रमाण पत्र, बैंकिंग, लोन और डिजिटल सेवाएं एक ही जगह पर।</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">सेवाएं देखें</button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">संपर्क करें</button>
                     </div>
-                    <h3>बुद्धिलाल</h3>
-                    <p class="designation">कंप्यूटर ऑपरेटर</p>
-                    <p class="description">PRK Computer Center Jan Sewa Kendra के संस्थापक और कंप्यूटर ऑपरेटर। सभी सरकारी सेवाओं में विशेषज्ञ।</p>
-                    <div class="team-contact">
-                        <a href="tel:9118663177" class="contact-link">
-                            <i class="fas fa-phone"></i> 9118663177
+
+                    <div class="hero-meta">
+                        <div><i class="fas fa-clock"></i> सोमवार - शनिवार</div>
+                        <div><i class="fas fa-map-marker-alt"></i> Haji Market, Sitapur</div>
+                    </div>
+                </div>
+
+                <div class="hero-panel">
+                    <div class="panel-card">
+                        <span class="badge">आज की सेवाएं</span>
+                        <h3>सरकारी सेवाएं</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> आधार / पैन / वोटर कार्ड</li>
+                            <li><i class="fas fa-check"></i> आय, जाति, निवास प्रमाण पत्र</li>
+                            <li><i class="fas fa-check"></i> बैंकिंग / AePS / मनी ट्रांसफर</li>
+                            <li><i class="fas fa-check"></i> पेंशन, बीमा, बिल भुगतान</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="feature-strip">
+            <div class="container feature-grid">
+                <div class="feature-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>विश्वसनीय</h3>
+                    <p>सही guidance और सुरक्षित कार्यप्रणाली</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-bolt"></i>
+                    <h3>तेज़ सेवा</h3>
+                    <p>त्वरित आवेदन, अपडेट और सहायता</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-user-check"></i>
+                    <h3>व्यक्तिगत सहयोग</h3>
+                    <p>हर ग्राहक को समझदारी से सहायता</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>आपसे सीधे संपर्क</h3>
+                    <p>फोन या WhatsApp पर तुरंत जवाब</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow eyebrow-dark">हमारी सेवाएं</p>
+                    <h2>सभी सरकारी व डिजिटल सेवाएं एक जगह</h2>
+                </div>
+
+                <div class="service-category">
+                    <h3><i class="fas fa-certificate"></i> प्रमाण पत्र (Certificates)</h3>
+                    <div class="service-grid">
+                        <a href="https://incometax.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>आय प्रमाण पत्र</h4>
+                            <p>Income Certificate आवेदन और प्रक्रिया</p>
+                            <span class="service-badge">सरकारी सेवा</span>
                         </a>
-                        <a href="mailto:buddhilal9118@gmail.com" class="contact-link">
-                            <i class="fas fa-envelope"></i> Email
+                        <a href="https://socialjustice.up.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>जाति प्रमाण पत्र</h4>
+                            <p>Caste Certificate के लिए आवेदन</p>
+                            <span class="service-badge">सरकारी सेवा</span>
+                        </a>
+                        <a href="https://admis.up.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>निवास प्रमाण पत्र</h4>
+                            <p>Domicile Certificate सेवा</p>
+                            <span class="service-badge">सरकारी सेवा</span>
+                        </a>
+                        <a href="https://crsorgi.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>जन्म / मृत्यु प्रमाण पत्र</h4>
+                            <p>Birth & Death Certificate सेवा</p>
+                            <span class="service-badge">सरकारी सेवा</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h3><i class="fas fa-id-card"></i> पहचान पत्र एवं दस्तावेज</h3>
+                    <div class="service-grid">
+                        <a href="https://www.onlineservices.nsdl.com/" target="_blank" rel="noopener" class="service-card">
+                            <h4>पैन कार्ड</h4>
+                            <p>PAN Card आवेदन और सुधार</p>
+                            <span class="service-badge">आवेदन</span>
+                        </a>
+                        <a href="https://aadhaar.uidai.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>आधार कार्ड</h4>
+                            <p>Aadhaar से संबंधित सेवाएं</p>
+                            <span class="service-badge">अपडेट</span>
+                        </a>
+                        <a href="https://voters.eci.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>वोटर आईडी कार्ड</h4>
+                            <p>Voter ID नया और संशोधन</p>
+                            <span class="service-badge">नई/संशोधन</span>
+                        </a>
+                        <a href="https://fcs.up.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>राशन कार्ड</h4>
+                            <p>Ration Card आवेदन और नाम जोड़ना</p>
+                            <span class="service-badge">आवेदन</span>
+                        </a>
+                        <a href="https://pmjay.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>आयुष्मान भारत कार्ड</h4>
+                            <p>Ayushman Card के लिए पंजीकरण</p>
+                            <span class="service-badge">पंजीकरण</span>
+                        </a>
+                        <a href="https://eshram.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>ई-श्रम कार्ड</h4>
+                            <p>e-Shram Card और श्रम कार्ड सेवा</p>
+                            <span class="service-badge">पंजीकरण</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h3><i class="fas fa-university"></i> वित्तीय एवं बैंकिंग सेवाएं</h3>
+                    <div class="service-grid">
+                        <a href="https://www.sbi.co.in/web/personal-banking/accounts" target="_blank" rel="noopener" class="service-card">
+                            <h4>बैंक खाता खोलना</h4>
+                            <p>Account Opening सेवा</p>
+                            <span class="service-badge">बैंकिंग</span>
+                        </a>
+                        <a href="https://www.npci.org.in/what-we-do/aeps" target="_blank" rel="noopener" class="service-card">
+                            <h4>नकद जमा और निकासी</h4>
+                            <p>AePS के माध्यम से Cash Services</p>
+                            <span class="service-badge">ATM सेवा</span>
+                        </a>
+                        <a href="https://www.rbi.org.in/scripts/FAQView.aspx?Id=102" target="_blank" rel="noopener" class="service-card">
+                            <h4>मनी ट्रांसफर</h4>
+                            <p>सुरक्षित धन हस्तांतरण</p>
+                            <span class="service-badge">रेमिटेंस</span>
+                        </a>
+                        <a href="https://pmmy.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>लोन आवेदन</h4>
+                            <p>Loan Apply & Repayment सेवा</p>
+                            <span class="service-badge">वित्त</span>
+                        </a>
+                        <a href="https://www.npci.org.in/what-we-do/bc-services" target="_blank" rel="noopener" class="service-card">
+                            <h4>मिनी एटीएम</h4>
+                            <p>Mini ATM और कैश सेवाएं</p>
+                            <span class="service-badge">ATM</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h3><i class="fas fa-cogs"></i> अन्य डिजिटल सेवाएं</h3>
+                    <div class="service-grid">
+                        <a href="https://scholarships.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>छात्रवृत्ति</h4>
+                            <p>Scholarship आवेदन</p>
+                            <span class="service-badge">शिक्षा</span>
+                        </a>
+                        <a href="https://www.bijli.up.nic.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>बिल भुगतान</h4>
+                            <p>बिजली, पानी और अन्य बिल</p>
+                            <span class="service-badge">भुगतान</span>
+                        </a>
+                        <a href="https://jeevanpramaan.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>पेंशन जीवन प्रमाण</h4>
+                            <p>Jeevan Pramaan सेवा</p>
+                            <span class="service-badge">पेंशन</span>
+                        </a>
+                        <a href="https://sarathiportal.nic.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>ड्राइविंग लाइसेंस</h4>
+                            <p>Driving Licence आवेदन</p>
+                            <span class="service-badge">परिवहन</span>
+                        </a>
+                        <a href="https://pmfby.gov.in/" target="_blank" rel="noopener" class="service-card">
+                            <h4>फसल बीमा</h4>
+                            <p>Crop Insurance और कृषि सेवाएं</p>
+                            <span class="service-badge">कृषि</span>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>हमारी सेवाएं</h2>
-            
-            <!-- Certificates -->
-            <div class="service-category">
-                <h3><i class="fas fa-certificate"></i> प्रमाण पत्र (Certificates)</h3>
-                <div class="service-grid">
-                    <a href="https://incometax.gov.in/" target="_blank" class="service-card">
-                        <h4>आय प्रमाण पत्र</h4>
-                        <p>Income Certificate आवेदन और प्रक्रिया</p>
-                        <span class="service-badge">सरकारी सेवा</span>
-                    </a>
-                    <a href="https://socialjustice.up.gov.in/" target="_blank" class="service-card">
-                        <h4>जाति प्रमाण पत्र</h4>
-                        <p>Caste Certificate के लिए आवेदन</p>
-                        <span class="service-badge">सरकारी सेवा</span>
-                    </a>
-                    <a href="https://admis.up.gov.in/" target="_blank" class="service-card">
-                        <h4>निवास प्रमाण पत्र</h4>
-                        <p>Domicile Certificate सेवा</p>
-                        <span class="service-badge">सरकारी सेवा</span>
-                    </a>
-                    <a href="https://crsorgi.gov.in/" target="_blank" class="service-card">
-                        <h4>जन्म और मृत्यु प्रमाण पत्र</h4>
-                        <p>Birth & Death Certificate सेवा</p>
-                        <span class="service-badge">सरकारी सेवा</span>
-                    </a>
+        <section id="news" class="news-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow eyebrow-dark">समाचार और अपडेट</p>
+                    <h2>नवीनतम समाचार</h2>
                 </div>
-            </div>
 
-            <!-- ID & Documentation -->
-            <div class="service-category">
-                <h3><i class="fas fa-id-card"></i> पहचान पत्र एवं दस्तावेज</h3>
-                <div class="service-grid">
-                    <a href="https://www.onlineservices.nsdl.com/" target="_blank" class="service-card">
-                        <h4>पैन कार्ड</h4>
-                        <p>PAN Card आवेदन और सुधार</p>
-                        <span class="service-badge">आवेदन</span>
-                    </a>
-                    <a href="https://aadhaar.uidai.gov.in/" target="_blank" class="service-card">
-                        <h4>आधार कार्ड</h4>
-                        <p>Aadhaar से संबंधित सेवाएं</p>
-                        <span class="service-badge">अपडेट</span>
-                    </a>
-                    <a href="https://voters.eci.gov.in/" target="_blank" class="service-card">
-                        <h4>वोटर आईडी कार्ड</h4>
-                        <p>Voter ID नया और संशोधन</p>
-                        <span class="service-badge">नई/संशोधन</span>
-                    </a>
-                    <a href="https://fcs.up.gov.in/" target="_blank" class="service-card">
-                        <h4>राशन कार्ड</h4>
-                        <p>Ration Card आवेदन और नाम जोड़ना</p>
-                        <span class="service-badge">आवेदन</span>
-                    </a>
-                    <a href="https://pmjay.gov.in/" target="_blank" class="service-card">
-                        <h4>आयुष्मान भारत कार्ड</h4>
-                        <p>Ayushman Card के लिए पंजीकरण</p>
-                        <span class="service-badge">पंजीकरण</span>
-                    </a>
-                    <a href="https://eshram.gov.in/" target="_blank" class="service-card">
-                        <h4>ई-श्रम कार्ड</h4>
-                        <p>e-Shram Card और श्रम कार्ड सेवा</p>
-                        <span class="service-badge">पंजीकरण</span>
-                    </a>
+                <div class="news-filters" aria-label="News filters">
+                    <button class="filter-btn active" type="button" data-filter="all">सभी</button>
+                    <button class="filter-btn" type="button" data-filter="vacancy">नौकरियाँ</button>
+                    <button class="filter-btn" type="button" data-filter="result">परिणाम</button>
+                    <button class="filter-btn" type="button" data-filter="admit">प्रवेश पत्र</button>
+                    <button class="filter-btn" type="button" data-filter="key">उत्तर कुंजी</button>
+                    <button class="filter-btn" type="button" data-filter="scheme">योजनाएं</button>
                 </div>
-            </div>
 
-            <!-- Financial & Banking -->
-            <div class="service-category">
-                <h3><i class="fas fa-university"></i> वित्तीय एवं बैंकिंग सेवाएं</h3>
-                <div class="service-grid">
-                    <a href="https://www.sbi.co.in/web/personal-banking/accounts" target="_blank" class="service-card">
-                        <h4>बैंक खाता खोलना</h4>
-                        <p>Account Opening सेवा</p>
-                        <span class="service-badge">बैंकिंग</span>
-                    </a>
-                    <a href="https://www.npci.org.in/what-we-do/aeps" target="_blank" class="service-card">
-                        <h4>नकद जमा और निकासी</h4>
-                        <p>AePS के माध्यम से Cash Services</p>
-                        <span class="service-badge">ATM सेवा</span>
-                    </a>
-                    <a href="https://www.rbi.org.in/scripts/FAQView.aspx?Id=102" target="_blank" class="service-card">
-                        <h4>मनी ट्रांसफर</h4>
-                        <p>सुरक्षित धन हस्तांतरण</p>
-                        <span class="service-badge">रेमिटेंस</span>
-                    </a>
-                    <a href="https://pmmy.gov.in/" target="_blank" class="service-card">
-                        <h4>लोन आवेदन</h4>
-                        <p>Loan Apply & Repayment सेवा</p>
-                        <span class="service-badge">वित्त</span>
-                    </a>
-                    <a href="https://www.npci.org.in/what-we-do/bc-services" target="_blank" class="service-card">
-                        <h4>मिनी एटीएम</h4>
-                        <p>Mini ATM और कैश सेवाएं</p>
-                        <span class="service-badge">ATM</span>
-                    </a>
+                <div class="news-grid" id="newsContainer"></div>
+            </div>
+        </section>
+
+        <section class="why-us">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow eyebrow-dark">क्यों चुनें हमें</p>
+                    <h2>आपके विश्वास के लिए हम तैयार हैं</h2>
                 </div>
-            </div>
 
-            <!-- Other Services -->
-            <div class="service-category">
-                <h3><i class="fas fa-cogs"></i> अन्य सरकारी और डिजिटल सेवाएं</h3>
-                <div class="service-grid">
-                    <a href="https://scholarships.gov.in/" target="_blank" class="service-card">
-                        <h4>छात्रवृत्ति</h4>
-                        <p>Scholarship आवेदन</p>
-                        <span class="service-badge">शिक्षा</span>
-                    </a>
-                    <a href="https://www.bijli.up.nic.in/" target="_blank" class="service-card">
-                        <h4>बिल भुगतान</h4>
-                        <p>बिजली, पानी और अन्य बिल</p>
-                        <span class="service-badge">भुगतान</span>
-                    </a>
-                    <a href="https://jeevanpramaan.gov.in/" target="_blank" class="service-card">
-                        <h4>पेंशन जीवन प्रमाण पत्र</h4>
-                        <p>Jeevan Pramaan सेवा</p>
-                        <span class="service-badge">पेंशन</span>
-                    </a>
-                    <a href="https://sarathiportal.nic.in/" target="_blank" class="service-card">
-                        <h4>ड्राइविंग लाइसेंस</h4>
-                        <p>Driving Licence आवेदन</p>
-                        <span class="service-badge">परिवहन</span>
-                    </a>
-                    <a href="https://pmfby.gov.in/" target="_blank" class="service-card">
-                        <h4>फसल बीमा</h4>
-                        <p>Crop Insurance और कृषि सेवाएं</p>
-                        <span class="service-badge">कृषि</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>हमसे संपर्क करें</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>संपर्क जानकारी</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <strong>पता:</strong>
-                            <p>Haji Market, Bank of India के पास<br>Tambaur, Sitapur<br>Uttar Pradesh 261208</p>
-                        </div>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <i class="fas fa-award"></i>
+                        <h3>कर्मचार्य और सही दिशा</h3>
+                        <p>हर आवेदन के लिए सही प्रक्रिया और स्पष्ट जानकारी दी जाती है।</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <strong>फोन:</strong>
-                            <p><a href="tel:9118663177">9118663177</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <strong>ईमेल:</strong>
-                            <p><a href="mailto:buddhilal9118@gmail.com">buddhilal9118@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
+                    <div class="why-card">
                         <i class="fas fa-clock"></i>
-                        <div>
-                            <strong>समय:</strong>
-                            <p>सोम - शनि: 9:00 AM - 6:00 PM<br>रविवार: बंद</p>
+                        <h3>समय पर सहायता</h3>
+                        <p>काम की समय-सीमा और दस्तावेज़ सत्यापन के लिए त्वरित मदद।</p>
+                    </div>
+                    <div class="why-card">
+                        <i class="fas fa-user-friends"></i>
+                        <h3>उपयोगकर्ता केंद्रित सेवा</h3>
+                        <p>हर व्यक्ति को सरल भाषा में समझाया जाता है और सहयोग दिया जाता है।</p>
+                    </div>
+                    <div class="why-card">
+                        <i class="fas fa-language"></i>
+                        <h3>हिंदी में आसान समझ</h3>
+                        <p>हिंदी भाषा में आसान समझ और सरल प्रक्रिया के साथ सेवाएं उपलब्ध हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow eyebrow-dark">टीम</p>
+                    <h2>हमारी टीम</h2>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-photo">
+                            <img src="https://via.placeholder.com/500x500?text=Buddhilal" alt="Buddhilal" />
+                        </div>
+                        <h3>बुद्धिलाल</h3>
+                        <p class="designation">कंप्यूटर ऑपरेटर / सेवा प्रबंधक</p>
+                        <p class="description">PRK Computer Center Jan Sewa Kendra के संस्थापक और सेवा प्रमुख। सरकारी दस्तावेज़, डिजिटल सेवाएं और ग्राहक सहायता में अनुभवी।</p>
+                        <div class="team-contact">
+                            <a href="tel:9118663177" class="contact-link"><i class="fas fa-phone"></i> 9118663177</a>
+                            <a href="mailto:buddhilal9118@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
                         </div>
                     </div>
                 </div>
-
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">नाम</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">फोन</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">ईमेल</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="service">सेवा चुनें</label>
-                        <select id="service" name="service" required>
-                            <option value="">-- सेवा चुनें --</option>
-                            <option value="certificate">प्रमाण पत्र</option>
-                            <option value="id-documents">पहचान पत्र</option>
-                            <option value="banking">बैंकिंग</option>
-                            <option value="other">अन्य</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">संदेश</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">भेजें</button>
-                </form>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow eyebrow-dark">संपर्क करें</p>
+                    <h2>हमसे जुड़ें</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>संपर्क जानकारी</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>पता:</strong>
+                                <p>Haji Market, Bank of India के पास,<br>Tambaur, Sitapur,<br>Uttar Pradesh 261208</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>फोन:</strong>
+                                <p><a href="tel:9118663177">9118663177</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>ईमेल:</strong>
+                                <p><a href="mailto:buddhilal9118@gmail.com">buddhilal9118@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>समय:</strong>
+                                <p>सोम - शनि: 9:00 AM - 6:00 PM<br>रविवार: बंद</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">नाम</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">फोन</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ईमेल</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">सेवा चुनें</label>
+                            <select id="service" name="service" required>
+                                <option value="">-- सेवा चुनें --</option>
+                                <option value="certificate">प्रमाण पत्र</option>
+                                <option value="id-documents">पहचान पत्र</option>
+                                <option value="banking">बैंकिंग</option>
+                                <option value="other">अन्य</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">संदेश</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">भेजें</button>
+                        <p id="formStatus" class="form-status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 PRK Computer Center Jan Sewa Kendra. सभी अधिकार सुरक्षित।</p>
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> PRK Computer Center Jan Sewa Kendra. सभी अधिकार सुरक्षित।</p>
             <p>Sitapur, Uttar Pradesh | Phone: 9118663177</p>
         </div>
     </footer>
 
+    <a href="https://wa.me/919118663177" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="WhatsApp Contact">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
